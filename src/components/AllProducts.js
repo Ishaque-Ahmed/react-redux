@@ -21,7 +21,7 @@ const AllProducts = () => {
         fetchProducts();
     }, []);
 
-    console.log("products:", products);
+    //console.log("products:", products);
 
     return (
         <div className='my-10'>
