@@ -10,13 +10,13 @@ const Product = () => {
             <Link to={`/product/${id}`}>
                 <div
                     key={id}
-                    className="card w-68 bg-base-100  shadow-lg hover:shadow-slate-800">
+                    className="card card-compact w-64 bg-base-100 h-96 shadow-lg hover:shadow-slate-800">
                     <figure><img src={image} alt="Shoes" className='w-36 h-36 pt-2' /></figure>
                     <div className="card-body">
-                        <h2 className="card-title">{title}</h2>
+                        <p className="card-title">{title}</p>
                         <p>Price: {price} Type: {category}</p>
-                        <div className="card-actions justify-end">
-                            <button className="btn btn-primary">Buy Now</button>
+                        <div className="card-actions justify-end items-center">
+                            <button className="btn btn-primary hover:btn-success">Buy Now</button>
                         </div>
                     </div>
                 </div>
